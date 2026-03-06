@@ -1,10 +1,10 @@
 name: horus_dataf_1
-description: "A new Flutter plugin project."
+description: "Plugin de Spark2 para el datafono 1"
 version: 0.0.1
 homepage:
 
 environment:
-  sdk: ^3.10.8
+  sdk: ^3.10.0
   flutter: '>=3.3.0'
 
 dependencies:
