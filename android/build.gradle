@@ -69,6 +69,6 @@ android {
 }
 
 dependencies {
-   implementation fileTree(include: ['*.jar'], dir: 'libs')
-//    implementation files('libs/myaarlibr.aar')
+//    implementation fileTree(include: ['*.jar'], dir: 'libs')
+   implementation files('libs/horus_dataf_1.aar')
 }

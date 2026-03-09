@@ -1,24 +1,28 @@
 ## 0.0.1
 
-* Release inicial
+* Release inicial.
 
 ## 0.0.2
 
-* Bajar el SDK
+* Bajar el SDK.
 
 ## 0.0.3
 
-* Error en la importación del paquete
+* Error en la importación del paquete.
 
 ## 0.0.4
 
-* Error en la importación del paquete 2
+* Error en la importación del paquete 2.
 
 ## 0.0.5
 
-* Error en la importación del paquete 3
+* Error en la importación del paquete 3.
 
 ## 0.0.6
 
-* Error en la importación del paquete 4 (casi lo tenemos)
+* Error en la importación del paquete 4 (casi lo tenemos).
+
+## 0.1.0
+
+* Rework plugin.
   
