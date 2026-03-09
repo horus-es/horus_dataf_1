@@ -10,7 +10,7 @@
 
 * Error en la importación del paquete
 
-## 0.0.3
+## 0.0.4
 
 * Error en la importación del paquete 2
   
