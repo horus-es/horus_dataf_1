@@ -69,5 +69,6 @@ android {
 }
 
 dependencies {
-    implementation fileTree(dir: "libs", include: ["*.aar"])
+   implementation fileTree(include: ['*.jar'], dir: 'libs')
+//    implementation files('libs/myaarlibr.aar')
 }
