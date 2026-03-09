@@ -1,6 +1,6 @@
 name: horus_dataf_1
 description: "Plugin de Spark2 para el datafono 1"
-version: 0.0.5
+version: 0.0.6
 homepage:
 
 environment:

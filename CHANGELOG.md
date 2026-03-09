@@ -17,4 +17,8 @@
 ## 0.0.5
 
 * Error en la importación del paquete 3
+
+## 0.0.6
+
+* Error en la importación del paquete 4 (casi lo tenemos)
   
