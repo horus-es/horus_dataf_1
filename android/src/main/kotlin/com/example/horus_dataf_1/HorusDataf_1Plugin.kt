@@ -17,7 +17,7 @@ class HorusDataf_1Plugin : FlutterPlugin, MethodCallHandler, ActivityAware, Plug
     private lateinit var channel: MethodChannel
     private var activity: Activity? = null
     private var pendingResult: Result? = null
-    private val REQUEST_CODE_REDEBAN = 100 // Código para identificar la respuesta [cite: 45]
+    private val REQUEST_CODE_REDEBAN = 100 // Código para identificar la respuesta
 
     override fun onAttachedToEngine(flutterPluginBinding: FlutterPlugin.FlutterPluginBinding) {
         channel = MethodChannel(flutterPluginBinding.binaryMessenger, "horus_dataf_1")
@@ -42,9 +42,9 @@ class HorusDataf_1Plugin : FlutterPlugin, MethodCallHandler, ActivityAware, Plug
     }
 
     private fun lanzarRedeban(jsonInput: String, marca: String) {
-        val intent = Intent(Intent.ACTION_SEND) [cite: 13]
+        val intent = Intent(Intent.ACTION_SEND)
         
-        // Configuración de paquete según el manual [cite: 13, 16]
+        // Configuración de paquete según el manual
         val packageName = if (marca.lowercase() == "urovo") 
             "rbm.urovo.wimobile.com.rbmappcomercioswm" 
         else 
@@ -55,12 +55,12 @@ class HorusDataf_1Plugin : FlutterPlugin, MethodCallHandler, ActivityAware, Plug
         else
             "rbm.pax.wimobile.com.rbmappcomercios.features.mainmenu.ui.MainMenuActivity"
 
-        val cn = ComponentName(packageName, activityName) [cite: 17]
+        val cn = ComponentName(packageName, activityName)
         intent.component = cn
         
-        // Es obligatorio enviar el nombre de tu propio paquete [cite: 18]
+        // Es obligatorio enviar el nombre de tu propio paquete
         intent.putExtra("package", activity?.packageName)
-        // Se envía el JSON de la transacción [cite: 21]
+        // Se envía el JSON de la transacción
         intent.putExtra("data_input", jsonInput)
 
         activity?.startActivityForResult(intent, REQUEST_CODE_REDEBAN)
@@ -69,7 +69,7 @@ class HorusDataf_1Plugin : FlutterPlugin, MethodCallHandler, ActivityAware, Plug
     // Captura la respuesta JSON de Redeban 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?): Boolean {
         if (requestCode == REQUEST_CODE_REDEBAN) {
-            val output = data?.getStringExtra("Data_output") // [cite: 45]
+            val output = data?.getStringExtra("Data_output")
             if (output != null) {
                 pendingResult?.success(output)
             } else {

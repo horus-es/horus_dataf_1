@@ -25,4 +25,8 @@
 ## 0.1.0
 
 * Rework plugin.
+
+## 0.1.1
+
+* Rework plugin.
   

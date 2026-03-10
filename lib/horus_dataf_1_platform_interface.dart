@@ -1,5 +1,4 @@
 import 'package:plugin_platform_interface/plugin_platform_interface.dart';
-
 import 'horus_dataf_1_method_channel.dart';
 
 abstract class HorusDataf_1Platform extends PlatformInterface {
