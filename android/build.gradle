@@ -19,7 +19,8 @@ allprojects {
         google()
         mavenCentral()
         flatDir {
-            dirs("$projectDir/android/libs")
+            // dirs("$projectDir/android/libs")
+            
         }
     }
 }
@@ -69,7 +70,7 @@ android {
 }
 
 dependencies {
-    implementation(name: 'horus_dataf_1', ext: 'aar')
+    implementation(name: 'horus_dataf_1', ext: 'jar')
 //    implementation fileTree(include: ['*.jar'], dir: 'libs')
 //    implementation project('libs/horus_dataf_1.aar')
     // implementation project(':horus_dataf_1')
