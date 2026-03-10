@@ -41,4 +41,7 @@
 ## 0.1.4
 
 * Error en la importación del paquete 5.
+## 0.1.5
+
+* Error en la importación del paquete 6.
   
