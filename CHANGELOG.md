@@ -29,4 +29,8 @@
 ## 0.1.1
 
 * Rework plugin.
+
+## 0.1.2
+
+* Error en la versión
   
