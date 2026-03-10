@@ -33,4 +33,8 @@
 ## 0.1.2
 
 * Error en la versión
+
+## 0.1.3
+
+* Error en la importación del paquete 5.
   
