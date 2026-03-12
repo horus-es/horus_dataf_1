@@ -61,4 +61,8 @@
 ## 0.1.9
 
 * Importación de dependencias
+
+## 0.2.7
+
+* Recuperación 0.1.9
   
