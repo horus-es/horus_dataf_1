@@ -41,6 +41,10 @@ android {
     sourceSets {
         main.java.srcDirs += "src/main/kotlin"
         test.java.srcDirs += "src/test/kotlin"
+        main {
+            // Esto asegura que Gradle busque librerías nativas dentro del AAR
+            jniLibs.srcDirs = ['libs']
+        }
     }
 
     defaultConfig {
@@ -67,9 +71,8 @@ android {
 
 dependencies {
     // Esto es vital para que reconozca el archivo renombrado
-    implementation files('libs/horus_dataf_1.aar')
-    api files('libs/horus_dataf_1.aar')
-    
+    api fileTree(dir: 'libs', include: ['*.aar'])
+
     // Nexgo suele requerir estas librerías base de Android
     implementation "androidx.appcompat:appcompat:1.6.1"
     implementation "androidx.core:core-ktx:1.10.1"

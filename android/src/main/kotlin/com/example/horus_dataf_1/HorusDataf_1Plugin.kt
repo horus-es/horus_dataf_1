@@ -11,7 +11,7 @@ import io.flutter.plugin.common.MethodChannel
 import io.flutter.plugin.common.MethodChannel.MethodCallHandler
 import io.flutter.plugin.common.MethodChannel.Result
 import io.flutter.plugin.common.PluginRegistry
-import com.nexgo.oem.common.CloudPosSdk
+import com.nexgo.common.CloudPosSdk
 import com.nexgo.smartpos.api.device.DeviceEngine
 
 class HorusDataf_1Plugin : FlutterPlugin, MethodCallHandler, ActivityAware, PluginRegistry.ActivityResultListener {
